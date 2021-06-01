@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시맨틱 태그 연습</title>
+  <style>
+    
+    html, body{
+     margin: 0; padding: 0; height: 100%;
+    }
+    .header{
+      width: 100%; height: 10%;
+      background-color: steelblue;
+    }
+    .nav{
+      width: 100%; height: 10%;
+      background-color: coral;
+    }
+    .section{
+      width: 70%; height: 35%;
+      background-color: greenyellow;
+      float: left;
+    }
+    
+    .article{
+      width: 30%; height: 25%;float: right;
+      background-color: thistle;
+
+    }
+    aside{
+      width: 30%; height: 45%; float: right;
+      background-color: wheat;
+      }
+    
+    .section{
+        width: 70%; height: 35%;float: left;
+        background-color: palegreen;
+      }
+    .footer{
+      width: 100%; height: 10%; clear: both;
+      background-color: violet;
+
+    }
+  </style>
+</head>
+<body>
+  <header class ="header">header</header>
+  <nav class="nav">nav</nav>
+  <article class="article">article</article>
+  <section class="section">section</section>
+  <aside class="aside">aside</aside>
+  <section class="section">
+    <header class="header">header</header>
+    <footer class="footer">footer</footer>
+  </section>
+  <footer class="footer">footer</footer>
+</body>
+</html>
