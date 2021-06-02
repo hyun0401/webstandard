@@ -1,0 +1,21 @@
+@charset "utf-8";
+body{
+  background-color: skyblue;
+}
+header > h3{
+  color: brown;
+  text-align: center;
+}
+header > p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main{
+  background-color: pink;
+  }
+  main span{
+    color: purple;
+  }
+  footer{
+    background-color: orange;
+    border: radius 20%;
+  }
