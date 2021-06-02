@@ -6,28 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    *{outline: 1px solid red;}
+    /* *{outline: 1px solid red;} */
     html,body{height: 100%;}
     body{margin: 0;}
     div{
-      border: 3px solid #000;
+      border-top:  5px solid #000;
+      border-left: 5px solid #000;
+      border-right: 5px solid #000;
+      
       height: 25%;
       box-sizing: border-box;
+      text-transform: capitalize;
     }
-    body div:nth-child(1){
-      background-color: aqua;
-      font-display: center;
-      
+    .box1, .box2, .box3{
+    border-bottom: 0px;
     }
-    body div:nth-child(3){
+    .box4{
+      border-bottom: 5px solid #000;
+    }
+    .box.box1, .box.box3 {
       background-color: aqua;
+    }
+    /* div:nth-child(odd){
+      background-color: aqua;
+    } */
+    
+    .wrapper{
+      display: table; width: 100%;
+      border-width: 0;
+    }
+    .wrapper .box1{
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-  <div>box1</div>
-  <div>box2</div>
-  <div>box3</div>
-  <div>box4</div>
+  <div class = "wrapper">
+  <div class = "box box1">box1</div>
+</div>
+  <div class = "box box2">box2</div>
+  <div class = "box box3">box3</div>
+  <div class = "box box4">box4</div>
 </body>
 </html>
